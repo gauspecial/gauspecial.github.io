@@ -1,0 +1,133 @@
+<!-- Dark Mode Toggle Button -->
+<div class="fixed top-5 right-5 z-50">
+    <button id="theme-toggle" class="p-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-lg hover:scale-110 active:scale-95 transition-all duration-200 text-slate-700 dark:text-amber-400">
+        <i id="theme-toggle-icon" class="fa-solid fa-moon text-xl"></i>
+    </button>
+</div>
+
+<!-- Main Container -->
+<main class="max-w-xl mx-auto px-4 py-16 flex-grow flex flex-col justify-center items-center w-full">
+    
+    <!-- Profile Header -->
+    <div class="text-center mb-8">
+        <div class="relative w-32 h-32 mx-auto mb-5 group">
+            <div class="absolute inset-0 bg-gradient-to-tr from-brand-500 to-emerald-400 rounded-full blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <!-- Avatar Thay thế bằng link ảnh của bạn -->
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=256&auto=format&fit=crop" 
+                 alt="Avatar" 
+                 class="relative w-full h-full object-cover rounded-full border-4 border-white dark:border-slate-800 shadow-md">
+        </div>
+        <h1 class="text-3xl font-extrabold tracking-tight mb-2 bg-gradient-to-r from-brand-600 to-emerald-500 dark:from-brand-400 dark:to-emerald-300 bg-clip-text text-transparent">
+            Nguyễn Văn A
+        </h1>
+        <p class="text-sm font-medium text-slate-500 dark:text-slate-400 tracking-wider uppercase mb-3">
+            Nhà sáng tạo nội dung & Lập trình viên
+        </p>
+        <p class="text-base text-slate-600 dark:text-slate-300 max-w-md mx-auto leading-relaxed">
+            Chào mừng bạn ghé thăm góc nhỏ của tôi trên internet! Nơi tôi chia sẻ đam mê và các dự án cá nhân.
+        </p>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex gap-4 mb-8 justify-center">
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-brand-500 dark:hover:text-brand-400 hover:border-brand-500 dark:hover:border-brand-400 transition-all duration-200">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-brand-500 dark:hover:text-brand-400 hover:border-brand-500 dark:hover:border-brand-400 transition-all duration-200">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-brand-500 dark:hover:text-brand-400 hover:border-brand-500 dark:hover:border-brand-400 transition-all duration-200">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-brand-500 dark:hover:text-brand-400 hover:border-brand-500 dark:hover:border-brand-400 transition-all duration-200">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+
+    <!-- Links Section -->
+    <div class="w-full space-y-4">
+        
+        <!-- Link 1 -->
+        <a href="https://zalo.me" target="_blank" 
+           class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700/50 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-blue-50 dark:bg-blue-950/40 text-blue-500 dark:text-blue-400 rounded-xl flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-message"></i>
+                </div>
+                <div class="text-left">
+                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Liên hệ qua Zalo</h3>
+                    <p class="text-xs text-slate-400 dark:text-slate-500">Nhắn tin trực tiếp hỗ trợ 24/7</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-slate-300 group-hover:translate-x-1 transition-transform"></i>
+        </a>
+
+        <!-- Link 2 -->
+        <a href="#" 
+           class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700/50 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-amber-50 dark:bg-amber-950/40 text-amber-500 dark:text-amber-400 rounded-xl flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="text-left">
+                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Hồ sơ năng lực (Portfolio)</h3>
+                    <p class="text-xs text-slate-400 dark:text-slate-500">Xem các sản phẩm và dịch vụ của tôi</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-slate-300 group-hover:translate-x-1 transition-transform"></i>
+        </a>
+
+        <!-- Link 3 -->
+        <a href="#" 
+           class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700/50 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-purple-50 dark:bg-purple-950/40 text-purple-500 dark:text-purple-400 rounded-xl flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="text-left">
+                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Gửi Email Hợp Tác</h3>
+                    <p class="text-xs text-slate-400 dark:text-slate-500">hopthulienhe@domain.com</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-slate-300 group-hover:translate-x-1 transition-transform"></i>
+        </a>
+
+    </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="text-center py-6 text-xs text-slate-400 dark:text-slate-500">
+    <p>© <span id="year"></span> Nguyễn Văn A. Thiết kế bởi Gemini.</p>
+</footer>
+
+<!-- Script xử lý Dark Mode -->
+<script>
+    // Tự động lấy năm hiện tại
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleIcon = document.getElementById('theme-toggle-icon');
+
+    // Kiểm tra tùy chọn giao diện đã lưu hoặc mặc định của hệ thống
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+        themeToggleIcon.className = 'fa-solid fa-sun text-xl text-amber-400';
+    } else {
+        document.documentElement.classList.remove('dark');
+        themeToggleIcon.className = 'fa-solid fa-moon text-xl text-slate-700';
+    }
+
+    // Bắt sự kiện click chuyển đổi giao diện
+    themeToggleBtn.addEventListener('click', function() {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+            themeToggleIcon.className = 'fa-solid fa-moon text-xl text-slate-700';
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+            themeToggleIcon.className = 'fa-solid fa-sun text-xl text-amber-400';
+        }
+    });
+</script>
