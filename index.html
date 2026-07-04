@@ -1,133 +1,654 @@
-<!-- Dark Mode Toggle Button -->
-<div class="fixed top-5 right-5 z-50">
-    <button id="theme-toggle" class="p-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-lg hover:scale-110 active:scale-95 transition-all duration-200 text-slate-700 dark:text-amber-400">
-        <i id="theme-toggle-icon" class="fa-solid fa-moon text-xl"></i>
-    </button>
-</div>
-
-<!-- Main Container -->
-<main class="max-w-xl mx-auto px-4 py-16 flex-grow flex flex-col justify-center items-center w-full">
-    
-    <!-- Profile Header -->
-    <div class="text-center mb-8">
-        <div class="relative w-32 h-32 mx-auto mb-5 group">
-            <div class="absolute inset-0 bg-gradient-to-tr from-brand-500 to-emerald-400 rounded-full blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <!-- Avatar Thay thế bằng link ảnh của bạn -->
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=256&auto=format&fit=crop" 
-                 alt="Avatar" 
-                 class="relative w-full h-full object-cover rounded-full border-4 border-white dark:border-slate-800 shadow-md">
-        </div>
-        <h1 class="text-3xl font-extrabold tracking-tight mb-2 bg-gradient-to-r from-brand-600 to-emerald-500 dark:from-brand-400 dark:to-emerald-300 bg-clip-text text-transparent">
-            Nguyễn Văn A
-        </h1>
-        <p class="text-sm font-medium text-slate-500 dark:text-slate-400 tracking-wider uppercase mb-3">
-            Nhà sáng tạo nội dung & Lập trình viên
-        </p>
-        <p class="text-base text-slate-600 dark:text-slate-300 max-w-md mx-auto leading-relaxed">
-            Chào mừng bạn ghé thăm góc nhỏ của tôi trên internet! Nơi tôi chia sẻ đam mê và các dự án cá nhân.
-        </p>
-    </div>
-
-    <!-- Social Icons -->
-    <div class="flex gap-4 mb-8 justify-center">
-        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-brand-500 dark:hover:text-brand-400 hover:border-brand-500 dark:hover:border-brand-400 transition-all duration-200">
-            <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-brand-500 dark:hover:text-brand-400 hover:border-brand-500 dark:hover:border-brand-400 transition-all duration-200">
-            <i class="fa-brands fa-tiktok"></i>
-        </a>
-        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-brand-500 dark:hover:text-brand-400 hover:border-brand-500 dark:hover:border-brand-400 transition-all duration-200">
-            <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-brand-500 dark:hover:text-brand-400 hover:border-brand-500 dark:hover:border-brand-400 transition-all duration-200">
-            <i class="fa-brands fa-github"></i>
-        </a>
-    </div>
-
-    <!-- Links Section -->
-    <div class="w-full space-y-4">
-        
-        <!-- Link 1 -->
-        <a href="https://zalo.me" target="_blank" 
-           class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700/50 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group">
-            <div class="flex items-center gap-4">
-                <div class="w-10 h-10 bg-blue-50 dark:bg-blue-950/40 text-blue-500 dark:text-blue-400 rounded-xl flex items-center justify-center text-lg">
-                    <i class="fa-solid fa-message"></i>
-                </div>
-                <div class="text-left">
-                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Liên hệ qua Zalo</h3>
-                    <p class="text-xs text-slate-400 dark:text-slate-500">Nhắn tin trực tiếp hỗ trợ 24/7</p>
-                </div>
-            </div>
-            <i class="fa-solid fa-chevron-right text-slate-300 group-hover:translate-x-1 transition-transform"></i>
-        </a>
-
-        <!-- Link 2 -->
-        <a href="#" 
-           class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700/50 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group">
-            <div class="flex items-center gap-4">
-                <div class="w-10 h-10 bg-amber-50 dark:bg-amber-950/40 text-amber-500 dark:text-amber-400 rounded-xl flex items-center justify-center text-lg">
-                    <i class="fa-solid fa-briefcase"></i>
-                </div>
-                <div class="text-left">
-                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Hồ sơ năng lực (Portfolio)</h3>
-                    <p class="text-xs text-slate-400 dark:text-slate-500">Xem các sản phẩm và dịch vụ của tôi</p>
-                </div>
-            </div>
-            <i class="fa-solid fa-chevron-right text-slate-300 group-hover:translate-x-1 transition-transform"></i>
-        </a>
-
-        <!-- Link 3 -->
-        <a href="#" 
-           class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700/50 border border-slate-200 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-500 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group">
-            <div class="flex items-center gap-4">
-                <div class="w-10 h-10 bg-purple-50 dark:bg-purple-950/40 text-purple-500 dark:text-purple-400 rounded-xl flex items-center justify-center text-lg">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="text-left">
-                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Gửi Email Hợp Tác</h3>
-                    <p class="text-xs text-slate-400 dark:text-slate-500">hopthulienhe@domain.com</p>
-                </div>
-            </div>
-            <i class="fa-solid fa-chevron-right text-slate-300 group-hover:translate-x-1 transition-transform"></i>
-        </a>
-
-    </div>
-
-</main>
-
-<!-- Footer -->
-<footer class="text-center py-6 text-xs text-slate-400 dark:text-slate-500">
-    <p>© <span id="year"></span> Nguyễn Văn A. Thiết kế bởi Gemini.</p>
-</footer>
-
-<!-- Script xử lý Dark Mode -->
-<script>
-    // Tự động lấy năm hiện tại
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const themeToggleIcon = document.getElementById('theme-toggle-icon');
-
-    // Kiểm tra tùy chọn giao diện đã lưu hoặc mặc định của hệ thống
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-        themeToggleIcon.className = 'fa-solid fa-sun text-xl text-amber-400';
-    } else {
-        document.documentElement.classList.remove('dark');
-        themeToggleIcon.className = 'fa-solid fa-moon text-xl text-slate-700';
-    }
-
-    // Bắt sự kiện click chuyển đổi giao diện
-    themeToggleBtn.addEventListener('click', function() {
-        if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('color-theme', 'light');
-            themeToggleIcon.className = 'fa-solid fa-moon text-xl text-slate-700';
-        } else {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('color-theme', 'dark');
-            themeToggleIcon.className = 'fa-solid fa-sun text-xl text-amber-400';
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ cá nhân thông minh & Trợ lý AI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
-    });
-</script>
+        .mono {
+            font-family: 'Inter', monospace;
+        }
+        /* Custom scrollbar for chat */
+        .chat-scroll::-webkit-scrollbar {
+            width: 5px;
+        }
+        .chat-scroll::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .chat-scroll::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 99px;
+        }
+        .dark .chat-scroll::-webkit-scrollbar-thumb {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col justify-between transition-colors duration-300">
+
+    <!-- Top Navigation Toolbar -->
+    <div class="fixed top-5 left-5 right-5 z-40 flex justify-between items-center pointer-events-none">
+        <!-- AI Customizer Button -->
+        <button id="ai-customizer-btn" class="pointer-events-auto flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 text-slate-700 dark:text-emerald-400 font-semibold text-xs md:text-sm">
+            <i class="fa-solid fa-wand-magic-sparkles text-emerald-500 animate-pulse"></i>
+            Tùy chỉnh AI
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="pointer-events-auto p-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-lg hover:scale-110 active:scale-95 transition-all duration-200 text-slate-700 dark:text-amber-400">
+            <i id="theme-toggle-icon" class="fa-solid fa-moon text-xl"></i>
+        </button>
+    </div>
+
+    <!-- Notification / Toast Message -->
+    <div id="toast" class="fixed top-20 left-1/2 -translate-x-1/2 z-50 transform translate-y-[-100px] opacity-0 bg-slate-900/90 dark:bg-slate-800/90 backdrop-blur-md text-white px-5 py-3 rounded-2xl shadow-2xl border border-slate-700 flex items-center gap-2 transition-all duration-300 text-sm">
+        <i class="fa-solid fa-circle-check text-emerald-400" id="toast-icon"></i>
+        <span id="toast-text">Thông báo mặc định</span>
+    </div>
+
+    <!-- Main Container -->
+    <main class="max-w-xl mx-auto px-4 pt-24 pb-16 flex-grow flex flex-col justify-center items-center w-full">
+        
+        <!-- Profile Header -->
+        <div class="text-center mb-8">
+            <div class="relative w-32 h-32 mx-auto mb-5 group">
+                <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500 to-blue-500 rounded-full blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <!-- Avatar (Click to change via link) -->
+                <img id="profile-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=256&auto=format&fit=crop" 
+                     alt="Avatar" 
+                     class="relative w-full h-full object-cover rounded-full border-4 border-white dark:border-slate-800 shadow-md">
+            </div>
+            
+            <h1 id="profile-name" class="text-3xl font-extrabold tracking-tight mb-2 bg-gradient-to-r from-emerald-600 to-blue-500 dark:from-emerald-400 dark:to-blue-400 bg-clip-text text-transparent">
+                Nguyễn Văn A
+            </h1>
+            
+            <p id="profile-title" class="text-sm font-semibold text-slate-500 dark:text-slate-400 tracking-wider uppercase mb-3">
+                Nhà sáng tạo nội dung & Lập trình viên
+            </p>
+            
+            <p id="profile-bio" class="text-base text-slate-600 dark:text-slate-300 max-w-md mx-auto leading-relaxed italic">
+                "Chào mừng bạn ghé thăm góc nhỏ của tôi trên internet! Nơi tôi chia sẻ đam mê và các dự án cá nhân."
+            </p>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex gap-4 mb-8 justify-center">
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500 dark:hover:border-emerald-400 transition-all duration-200">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500 dark:hover:border-emerald-400 transition-all duration-200">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500 dark:hover:border-emerald-400 transition-all duration-200">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full shadow-sm text-slate-600 dark:text-slate-300 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500 dark:hover:border-emerald-400 transition-all duration-200">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+        <!-- Links Section -->
+        <div class="w-full space-y-4">
+            
+            <!-- Link 1 -->
+            <a href="https://zalo.me" target="_blank" 
+               class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700/50 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-50 dark:bg-blue-950/40 text-blue-500 dark:text-blue-400 rounded-xl flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">Liên hệ qua Zalo</h3>
+                        <p class="text-xs text-slate-400 dark:text-slate-500">Nhắn tin trực tiếp hỗ trợ 24/7</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <!-- Link 2 -->
+            <a href="#" 
+               class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700/50 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-500 dark:text-emerald-400 rounded-xl flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">Hồ sơ năng lực (Portfolio)</h3>
+                        <p class="text-xs text-slate-400 dark:text-slate-500">Xem các sản phẩm và dự án của tôi</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <!-- Link 3 -->
+            <a href="mailto:hopthulienhe@domain.com" 
+               class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700/50 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-purple-50 dark:bg-purple-950/40 text-purple-500 dark:text-purple-400 rounded-xl flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">Gửi Email Hợp Tác</h3>
+                        <p id="profile-email-text" class="text-xs text-slate-400 dark:text-slate-500">hopthulienhe@domain.com</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- Side Panel: AI Customizer Toolbar -->
+    <div id="ai-panel" class="fixed top-0 left-0 h-full w-full max-w-sm bg-white dark:bg-slate-800 shadow-2xl border-r border-slate-200 dark:border-slate-700 z-50 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between">
+        <div class="p-6 space-y-6 overflow-y-auto flex-grow chat-scroll">
+            <div class="flex justify-between items-center pb-4 border-b border-slate-200 dark:border-slate-700">
+                <h2 class="text-lg font-bold text-slate-800 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-wand-magic-sparkles text-emerald-500"></i>
+                    Bảng điều khiển AI
+                </h2>
+                <button id="close-ai-panel" class="p-1 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Profile Editor -->
+            <div class="space-y-3">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">1. Chỉnh sửa thông tin</h3>
+                <div>
+                    <label class="block text-xs font-semibold mb-1 text-slate-500">Họ và tên</label>
+                    <input type="text" id="edit-name" class="w-full p-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:border-emerald-500 focus:outline-none transition-all">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1 text-slate-500">Tiêu đề công việc</label>
+                    <input type="text" id="edit-title" class="w-full p-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:border-emerald-500 focus:outline-none transition-all">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1 text-slate-500">Link ảnh đại diện</label>
+                    <input type="text" id="edit-avatar" class="w-full p-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl text-xs font-mono focus:border-emerald-500 focus:outline-none transition-all">
+                </div>
+            </div>
+
+            <!-- AI Writer Feature -->
+            <div class="space-y-3 pt-4 border-t border-slate-200 dark:border-slate-700">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+                    <span>2. Sáng tạo Tiểu sử (Bio) bằng AI</span>
+                    <span class="text-[10px] bg-emerald-100 dark:bg-emerald-950/50 text-emerald-600 px-1.5 py-0.5 rounded-md font-mono">Gemini</span>
+                </h3>
+                <textarea id="ai-keywords" rows="3" placeholder="Ví dụ: Đam mê làm sản phẩm đẹp, chuyên thiết kế UI/UX, thích uống cà phê đen..." class="w-full p-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:border-emerald-500 focus:outline-none transition-all resize-none"></textarea>
+                
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                    <button onclick="generateBio('Trang trọng')" class="p-2 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 rounded-lg font-medium transition-all">💼 Trang trọng</button>
+                    <button onclick="generateBio('Hài hước')" class="p-2 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 rounded-lg font-medium transition-all">🎯 Hài hước</button>
+                    <button onclick="generateBio('Sáng tạo')" class="p-2 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 rounded-lg font-medium transition-all">🎨 Sáng tạo</button>
+                    <button onclick="generateBio('Công nghệ')" class="p-2 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 rounded-lg font-medium transition-all">💻 Công nghệ</button>
+                </div>
+                
+                <div id="ai-generating" class="hidden text-xs text-emerald-500 font-medium animate-pulse text-center py-2">
+                    <i class="fa-solid fa-spinner fa-spin"></i> Gemini đang sáng tạo văn bản...
+                </div>
+            </div>
+
+            <!-- AI Translation Feature -->
+            <div class="space-y-3 pt-4 border-t border-slate-200 dark:border-slate-700">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">3. Dịch thuật trang web</h3>
+                <div class="grid grid-cols-3 gap-1.5 text-xs">
+                    <button onclick="translatePage('English')" class="py-2 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">🇬🇧 Tiếng Anh</button>
+                    <button onclick="translatePage('Japanese')" class="py-2 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">🇯🇵 Tiếng Nhật</button>
+                    <button onclick="translatePage('Korean')" class="py-2 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">🇰🇷 Tiếng Hàn</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 bg-slate-50 dark:bg-slate-900/80 border-t border-slate-200 dark:border-slate-700 flex gap-2">
+            <button id="save-customizer" class="flex-grow py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl text-sm font-bold shadow-md hover:shadow-lg active:scale-95 transition-all">Lưu trang cá nhân</button>
+            <button id="reset-customizer" class="px-3.5 py-2.5 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-xl text-sm font-semibold active:scale-95 transition-all" title="Khôi phục mặc định"><i class="fa-solid fa-rotate-left"></i></button>
+        </div>
+    </div>
+    <!-- Overlay for Side Panel -->
+    <div id="panel-overlay" class="fixed inset-0 bg-black/40 backdrop-blur-xs z-40 hidden transition-opacity"></div>
+
+
+    <!-- Floating AI Digital Twin Chat Widget -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <!-- Chat Toggle Bubble -->
+        <button id="chat-toggle-btn" class="relative group w-14 h-14 bg-gradient-to-tr from-emerald-500 to-teal-400 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300">
+            <!-- Notification Dot -->
+            <span class="absolute top-0 right-1 flex h-3.5 w-3.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-rose-500 border border-white"></span>
+            </span>
+            <!-- Icons -->
+            <i class="fa-solid fa-comments text-2xl group-hover:rotate-6 transition-transform"></i>
+        </button>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="hidden absolute bottom-18 right-0 w-[360px] md:w-[400px] h-[500px] bg-white dark:bg-slate-800 shadow-2xl rounded-3xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between overflow-hidden transition-all duration-300 transform scale-95 opacity-0">
+            <!-- Header -->
+            <div class="p-4 bg-gradient-to-r from-emerald-500 to-teal-400 text-white flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div class="relative w-10 h-10 rounded-full overflow-hidden border border-white/20">
+                        <img id="chat-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=256&auto=format&fit=crop" class="w-full h-full object-cover" alt="AI Avatar">
+                        <span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-400 rounded-full border border-white"></span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm" id="chat-header-name">Trợ lý AI (Bản sao số)</h4>
+                        <p class="text-[10px] text-white/80 flex items-center gap-1"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full inline-block animate-pulse"></span>Đang hoạt động</p>
+                    </div>
+                </div>
+                <button id="close-chat" class="text-white/80 hover:text-white p-1 hover:bg-white/10 rounded-full transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Messages Body -->
+            <div id="chat-messages" class="flex-grow p-4 overflow-y-auto space-y-3 bg-slate-50 dark:bg-slate-900/50 chat-scroll">
+                <!-- AI Welcoming Message -->
+                <div class="flex items-start gap-2.5">
+                    <div class="w-8 h-8 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-xs shrink-0 font-bold border border-emerald-500/10">AI</div>
+                    <div class="bg-white dark:bg-slate-800 p-3 rounded-2xl rounded-tl-none shadow-xs border border-slate-100 dark:border-slate-700 max-w-[80%] text-sm">
+                        Chào bạn! Tôi là <strong>Bản sao số AI</strong> của Nguyễn Văn A. Tôi sẵn sàng giải đáp bất kỳ thắc mắc nào của bạn về dự án, kỹ năng, định hướng nghề nghiệp hoặc cách hợp tác làm việc. Bạn muốn tìm hiểu gì nào? 😊
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Suggestions -->
+            <div class="px-4 py-2 flex flex-wrap gap-1.5 bg-white dark:bg-slate-800 border-t border-slate-100 dark:border-slate-700">
+                <button onclick="sendSuggested('Kinh nghiệm làm việc của bạn là gì?')" class="text-[11px] bg-slate-50 hover:bg-emerald-50 dark:bg-slate-900 dark:hover:bg-emerald-950/40 text-slate-600 dark:text-slate-300 px-2.5 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-400 transition-all">💼 Kinh nghiệm?</button>
+                <button onclick="sendSuggested('Bạn có thế mạnh gì đặc biệt?')" class="text-[11px] bg-slate-50 hover:bg-emerald-50 dark:bg-slate-900 dark:hover:bg-emerald-950/40 text-slate-600 dark:text-slate-300 px-2.5 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-400 transition-all">🚀 Thế mạnh?</button>
+                <button onclick="sendSuggested('Làm sao để liên hệ trực tiếp với bạn?')" class="text-[11px] bg-slate-50 hover:bg-emerald-50 dark:bg-slate-900 dark:hover:bg-emerald-950/40 text-slate-600 dark:text-slate-300 px-2.5 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-400 transition-all">📞 Liên hệ?</button>
+            </div>
+
+            <!-- Input bar -->
+            <div class="p-3 bg-white dark:bg-slate-800 border-t border-slate-100 dark:border-slate-700 flex items-center gap-2">
+                <input type="text" id="chat-input" placeholder="Hỏi tôi bất cứ điều gì..." class="flex-grow p-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:border-emerald-400 transition-all">
+                <button id="chat-send" class="w-10 h-10 bg-emerald-500 hover:bg-emerald-600 active:scale-95 text-white rounded-xl flex items-center justify-center transition-all shadow-md">
+                    <i class="fa-solid fa-paper-plane text-sm"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-xs text-slate-400 dark:text-slate-500 bg-white/20 dark:bg-slate-950/20">
+        <p>© <span id="year"></span> <span id="footer-name">Nguyễn Văn A</span>. Bản quyền thuộc về chủ sở hữu.</p>
+    </footer>
+
+    <!-- Script: Interactive UI & Gemini API Features -->
+    <script>
+        // Default Config profile
+        const defaultConfig = {
+            name: "Nguyễn Văn A",
+            title: "Nhà sáng tạo nội dung & Lập trình viên",
+            bio: "Chào mừng bạn ghé thăm góc nhỏ của tôi trên internet! Nơi tôi chia sẻ đam mê và các dự án cá nhân.",
+            avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=256&auto=format&fit=crop"
+        };
+
+        let profileState = { ...defaultConfig };
+
+        // Initialize App & Load from LocalStorage
+        window.onload = function () {
+            document.getElementById('year').textContent = new Date().getFullYear();
+            
+            const savedState = localStorage.getItem('personal-profile-state');
+            if (savedState) {
+                profileState = JSON.parse(savedState);
+            }
+            applyProfileState();
+            initializeTheme();
+        }
+
+        // Apply state values directly to DOM elements
+        function applyProfileState() {
+            document.getElementById('profile-name').innerText = profileState.name;
+            document.getElementById('profile-title').innerText = profileState.title;
+            document.getElementById('profile-bio').innerText = `"${profileState.bio}"`;
+            document.getElementById('profile-avatar').src = profileState.avatar;
+            document.getElementById('chat-avatar').src = profileState.avatar;
+            document.getElementById('footer-name').innerText = profileState.name;
+            document.getElementById('chat-header-name').innerText = `Trợ lý AI của ${profileState.name.split(' ').pop()}`;
+
+            // Sync with editor inputs
+            document.getElementById('edit-name').value = profileState.name;
+            document.getElementById('edit-title').value = profileState.title;
+            document.getElementById('edit-avatar').value = profileState.avatar;
+        }
+
+        // Display beautiful toast alert
+        function showToast(message, type = "success") {
+            const toast = document.getElementById('toast');
+            const toastText = document.getElementById('toast-text');
+            const toastIcon = document.getElementById('toast-icon');
+
+            toastText.innerText = message;
+            if (type === "success") {
+                toastIcon.className = "fa-solid fa-circle-check text-emerald-400 text-base animate-bounce";
+            } else if (type === "error") {
+                toastIcon.className = "fa-solid fa-circle-exclamation text-rose-500 text-base animate-pulse";
+            } else {
+                toastIcon.className = "fa-solid fa-spinner fa-spin text-emerald-400 text-base";
+            }
+
+            toast.classList.remove('translate-y-[-100px]', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            if (type !== "loading") {
+                setTimeout(() => {
+                    toast.classList.add('translate-y-[-100px]', 'opacity-0');
+                    toast.classList.remove('translate-y-0', 'opacity-100');
+                }, 3000);
+            }
+        }
+
+        function hideToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.add('translate-y-[-100px]', 'opacity-0');
+            toast.classList.remove('translate-y-0', 'opacity-100');
+        }
+
+        // Core function to interact with Gemini API using standard fetch
+        async function callGemini(systemPrompt, userQuery) {
+            const apiKey = ""; // Will be replaced by Canvas system at runtime
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                }
+            };
+
+            // Implement exponential backoff for robust API communication
+            let delay = 1000;
+            for (let attempt = 0; attempt < 3; attempt++) {
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`Gemini API Error: Status code ${response.status}`);
+                    }
+                    
+                    const result = await response.json();
+                    const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+                    if (text) return text.trim();
+                    throw new Error("Empty response payload structure.");
+                } catch (error) {
+                    if (attempt === 2) {
+                        throw error;
+                    }
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                    delay *= 2; // exponential backup step
+                }
+            }
+        }
+
+        // Chat Window Interactions
+        const chatToggleBtn = document.getElementById('chat-toggle-btn');
+        const chatWindow = document.getElementById('chat-window');
+        const chatClose = document.getElementById('close-chat');
+        const chatMessages = document.getElementById('chat-messages');
+        const chatInput = document.getElementById('chat-input');
+        const chatSend = document.getElementById('chat-send');
+
+        chatToggleBtn.addEventListener('click', () => {
+            if (chatWindow.classList.contains('hidden')) {
+                chatWindow.classList.remove('hidden');
+                setTimeout(() => {
+                    chatWindow.classList.remove('scale-95', 'opacity-0');
+                    chatWindow.classList.add('scale-100', 'opacity-100');
+                }, 10);
+            } else {
+                closeChatBox();
+            }
+        });
+
+        chatClose.addEventListener('click', closeChatBox);
+
+        function closeChatBox() {
+            chatWindow.classList.remove('scale-100', 'opacity-100');
+            chatWindow.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                chatWindow.classList.add('hidden');
+            }, 300);
+        }
+
+        // Send a message inside the Chat
+        async function sendMessage() {
+            const query = chatInput.value.trim();
+            if (!query) return;
+
+            chatInput.value = "";
+            appendMessage(query, "user");
+
+            // Display "typing..." animation bubble
+            const typingId = appendTypingIndicator();
+
+            try {
+                const systemPrompt = `Bạn là Trợ lý AI (Bản sao kỹ thuật số) đại diện cho một cá nhân xuất sắc có thông tin như sau:
+- Họ và tên: ${profileState.name}
+- Chức danh: ${profileState.title}
+- Giới thiệu bản thân: ${profileState.bio}
+Nhiệm vụ của bạn là trò chuyện trực tuyến, trả lời các thắc mắc của nhà tuyển dụng hoặc khách ghé thăm một cách chuyên nghiệp, thông minh, cực kỳ lịch thiệp và thân thiện.
+Lưu ý quan trọng: 
+1. Trả lời cô đọng và cuốn hút (trong tầm 2 đến 3 câu).
+2. Tỏ thái độ sẵn sàng đón nhận thử thách mới, định hướng sáng tạo. 
+3. Dùng các icon phù hợp để cuộc hội thoại tự nhiên, ấm áp.`;
+
+                const aiResponse = await callGemini(systemPrompt, query);
+                removeTypingIndicator(typingId);
+                appendMessage(aiResponse, "ai");
+            } catch (error) {
+                console.error(error);
+                removeTypingIndicator(typingId);
+                appendMessage("Xin lỗi bạn, kết nối của tôi đang bị gián đoạn một chút. Bạn có thể thử lại ngay nhé! 🔌", "ai");
+            }
+        }
+
+        chatSend.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        function sendSuggested(text) {
+            chatInput.value = text;
+            sendMessage();
+        }
+
+        // Append message to UI body
+        function appendMessage(text, sender) {
+            const container = document.createElement('div');
+            container.className = "flex items-start gap-2.5 " + (sender === "user" ? "justify-end" : "");
+
+            if (sender === "user") {
+                container.innerHTML = `
+                    <div class="bg-gradient-to-r from-emerald-500 to-teal-500 text-white p-3 rounded-2xl rounded-tr-none shadow-xs max-w-[80%] text-sm leading-relaxed">
+                        ${text}
+                    </div>
+                `;
+            } else {
+                container.innerHTML = `
+                    <div class="w-8 h-8 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-xs shrink-0 font-bold border border-emerald-500/10">AI</div>
+                    <div class="bg-white dark:bg-slate-800 p-3 rounded-2xl rounded-tl-none shadow-xs border border-slate-100 dark:border-slate-700 max-w-[80%] text-sm leading-relaxed">
+                        ${text}
+                    </div>
+                `;
+            }
+            chatMessages.appendChild(container);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function appendTypingIndicator() {
+            const id = "typing-" + Date.now();
+            const container = document.createElement('div');
+            container.id = id;
+            container.className = "flex items-start gap-2.5";
+            container.innerHTML = `
+                <div class="w-8 h-8 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-xs shrink-0 font-bold border border-emerald-500/10">AI</div>
+                <div class="bg-white dark:bg-slate-800 p-3 rounded-2xl rounded-tl-none shadow-xs border border-slate-100 dark:border-slate-700 text-sm flex items-center gap-1.5 py-4 px-5">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full animate-bounce" style="animation-delay: 0ms"></span>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full animate-bounce" style="animation-delay: 150ms"></span>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full animate-bounce" style="animation-delay: 300ms"></span>
+                </div>
+            `;
+            chatMessages.appendChild(container);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            return id;
+        }
+
+        function removeTypingIndicator(id) {
+            const element = document.getElementById(id);
+            if (element) element.remove();
+        }
+
+        // AI Panel controls
+        const aiPanel = document.getElementById('ai-panel');
+        const aiCustomizerBtn = document.getElementById('ai-customizer-btn');
+        const closeAiPanel = document.getElementById('close-ai-panel');
+        const panelOverlay = document.getElementById('panel-overlay');
+
+        aiCustomizerBtn.addEventListener('click', toggleAiPanel);
+        closeAiPanel.addEventListener('click', toggleAiPanel);
+        panelOverlay.addEventListener('click', toggleAiPanel);
+
+        function toggleAiPanel() {
+            if (aiPanel.classList.contains('-translate-x-full')) {
+                aiPanel.classList.remove('-translate-x-full');
+                panelOverlay.classList.remove('hidden');
+            } else {
+                aiPanel.classList.add('-translate-x-full');
+                panelOverlay.classList.add('hidden');
+            }
+        }
+
+        // Generate customized bio based on keyword style
+        async function generateBio(style) {
+            const keywords = document.getElementById('ai-keywords').value.trim();
+            if (!keywords) {
+                showToast("Bạn vui lòng điền các từ khóa gợi ý về bản thân nhé!", "error");
+                return;
+            }
+
+            const loader = document.getElementById('ai-generating');
+            loader.classList.remove('hidden');
+            showToast("Gemini đang thiết kế đoạn bio...", "loading");
+
+            const systemPrompt = `Bạn là chuyên gia tư vấn viết lách thương hiệu cá nhân (Copywriter).
+Hãy soạn thảo một đoạn tự giới thiệu bản thân (Bio/Giới thiệu ngắn) vô cùng xuất sắc và tự nhiên dựa trên thông tin đầu vào.
+Mục tiêu là tạo ra sự ấn tượng mạnh cho nhà tuyển dụng hoặc người xem.
+Yêu cầu:
+1. Độ dài: Cực kỳ ngắn gọn (Khoảng từ 20 đến 35 từ), đóng trong một câu đơn giản hoặc hai câu ngắn cực kỳ súc tích.
+2. Trả về đúng 1 câu viết hoàn thiện bằng Tiếng Việt, không kèm theo lời khuyên hay mô tả cấu trúc.
+3. Không đặt dấu ngoặc kép bọc ngoài câu trả lời.
+4. Áp dụng phong cách: ${style}.`;
+
+            try {
+                const result = await callGemini(systemPrompt, `Từ khóa của tôi: ${keywords}`);
+                document.getElementById('profile-bio').innerText = `"${result}"`;
+                // update editor too
+                profileState.bio = result;
+                showToast(`Đã đổi bio thành công theo phong cách ${style}!`);
+            } catch (error) {
+                console.error(error);
+                showToast("Không thể tạo văn bản bằng AI. Vui lòng thử lại!", "error");
+            } finally {
+                loader.classList.add('hidden');
+                hideToast();
+            }
+        }
+
+        // Translate profile content using Gemini API
+        async function translatePage(language) {
+            showToast(`Đang chuyển ngữ sang ${language}...`, "loading");
+            
+            try {
+                const systemPrompt = `Bạn là một biên dịch viên cao cấp chuyên dịch thuật tài liệu hồ sơ năng lực cá nhân một cách tự nhiên và mượt mà.
+Dịch chuẩn xác cụm từ được đưa vào sang ${language}, giữ nguyên phong thái và ngữ cảnh nghề nghiệp của đối tượng.
+Hãy trả về DUY NHẤT nội dung đã dịch, không thêm chú thích hay ký tự thừa.`;
+
+                // Translate Title and Bio simultaneously 
+                const translatedTitlePromise = callGemini(systemPrompt, `Dịch chức danh này: ${profileState.title}`);
+                const translatedBioPromise = callGemini(systemPrompt, `Dịch tiểu sử này: ${profileState.bio}`);
+
+                const [translatedTitle, translatedBio] = await Promise.all([translatedTitlePromise, translatedBioPromise]);
+
+                document.getElementById('profile-title').innerText = translatedTitle;
+                document.getElementById('profile-bio').innerText = `"${translatedBio}"`;
+
+                profileState.title = translatedTitle;
+                profileState.bio = translatedBio;
+
+                showToast(`Đã chuyển toàn bộ trang web sang ${language}!`);
+            } catch (error) {
+                console.error(error);
+                showToast("Dịch thuật thất bại. Vui lòng kiểm tra lại kết nối mạng!", "error");
+            } finally {
+                hideToast();
+            }
+        }
+
+        // Save Customizer State to LocalStorage
+        document.getElementById('save-customizer').addEventListener('click', () => {
+            profileState.name = document.getElementById('edit-name').value.trim() || defaultConfig.name;
+            profileState.title = document.getElementById('edit-title').value.trim() || defaultConfig.title;
+            profileState.avatar = document.getElementById('edit-avatar').value.trim() || defaultConfig.avatar;
+            // Bio is already dynamically assigned
+            
+            localStorage.setItem('personal-profile-state', JSON.stringify(profileState));
+            applyProfileState();
+            toggleAiPanel();
+            showToast("Đã cập nhật và lưu trữ hồ sơ cá nhân thành công! 🎉");
+        });
+
+        // Reset Customizer to initial Default Values
+        document.getElementById('reset-customizer').addEventListener('click', () => {
+            if (confirm("Bạn có muốn khôi phục toàn bộ thông tin về trạng thái mặc định ban đầu không?")) {
+                profileState = { ...defaultConfig };
+                localStorage.removeItem('personal-profile-state');
+                applyProfileState();
+                showToast("Đã khôi phục cài đặt mặc định thành công!");
+                toggleAiPanel();
+            }
+        });
+
+        // Light/Dark Mode Logic
+        function initializeTheme() {
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const themeToggleIcon = document.getElementById('theme-toggle-icon');
+
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+                themeToggleIcon.className = 'fa-solid fa-sun text-xl text-amber-400';
+            } else {
+                document.documentElement.classList.remove('dark');
+                themeToggleIcon.className = 'fa-solid fa-moon text-xl text-slate-700';
+            }
+
+            themeToggleBtn.addEventListener('click', function() {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                    themeToggleIcon.className = 'fa-solid fa-moon text-xl text-slate-700';
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                    themeToggleIcon.className = 'fa-solid fa-sun text-xl text-amber-400';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
